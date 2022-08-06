@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %> | CacheCheck</title>
+    <link rel="icon" type="image/x-icon" href="http://localhost:3000/assets/images/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://localhost:3000/assets/css/cache.css"
+    />
+  </head>
+  <body>
+    <div class="menuDiv">
+      <img class="logoUp" src="http://localhost:3000/assets/images/logo.png">
+    </div>
+    <div class="divMain">
+      <h1 class="pageTitle">Verify your Solution</h1>
+      <hr>
+        <h2>Cache Name: <ins><%= title %></ins></h2>
+        <h2>GC Code: <ins><%= gcode %></ins></h2>
+        <br>
+        <h2>Insert you Solution <input id="solution" type="text"></h2>
+
+        <button onclick="send()">Send</button>
+    </div>
+
+    <script>
+      function send() {
+
+        let input = document.getElementById("solution").value
+        let url = window.location.pathname + "?try=" + input
+        const mark= [" ", "°"]
+        mark.forEach(sign => {
+          if(url.includes(sign)){
+            url = url.replace(eval(`/${sign}/g`), "")
+          }
+        })
+        window.location.replace("http://localhost:3000" + url);
+      }
+    </script>
+  </body>
+</html>

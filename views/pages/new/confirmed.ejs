@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Cache Page | CacheCheck</title>
+    <link rel="stylesheet" href="http://lab.lepture.com/editor/editor.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://localhost:3000/assets/css/new.css"
+    />
+    <script
+      type="text/javascript"
+      src="http://lab.lepture.com/editor/editor.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://lab.lepture.com/editor/marked.js"
+    ></script>
+  </head>
+  <body>
+    <div class="divMain">
+      <h1 class="pageTitle">Create new Solution Checker</h1>
+      <hr>
+      <div class="approved">
+        <p class="approvedtext"><img src="http://localhost:3000/assets/images/approved.png" width="30px"> Page created successfully! Go to the <a href="http://localhost:3000/dash">page</a></p>
+      </div>
+      <form action="/dash/new" method="POST">
+        <h2>Cache Name: <input required="true" type="text" name="title" class="title"/></h2>
+        <h2>GC Code: <input required="true" type="text" name="gcode" placeholder="GC9ACNE" class="gcode"/></h2>
+        <h2>Owner: <input required="true" type="text" name="owner" placeholder="TheCasalegno" class="owner"/></h2>
+        <h2>Solution: <input required="true" type="text" name="solution" placeholder="N45 03.587 E007 54.657" class="solution"/></h2>
+        <h2>Message: <p class="noteMessage">This message will be displayed when the user enters the correct solution</p> </h2>
+        <textarea class="message" textarea name="message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <a target="_blank" href="https://icons8.com/icon/2peFhMhIYeZb/approved">Approved</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+    <script>
+      var editor = new Editor();
+      editor.render();
+    </script>
+  </body>
+</html>

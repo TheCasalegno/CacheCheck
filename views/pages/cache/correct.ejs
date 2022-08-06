@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %> | CacheCheck</title>
+    <link rel="icon" type="image/x-icon" href="http://localhost:3000/assets/images/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://localhost:3000/assets/css/cache.css"
+    />
+  </head>
+  <body>
+    <div class="divMain">
+      <h1 class="pageTitle">Your solution is correct!</h1>
+      <hr>
+        <h2>Cache Name: <ins><%= title %></ins></h2>
+        <h2>GC Code: <ins><%= gcode %></ins></h2>
+        <p>⁣</p>
+        <h2>Solution: <ins><%= solution %></ins></h2>
+        <p>⁣</p>
+        <div class="messageDiv">
+          <%- message %>
+        </div>
+    </div>
+
+    <script>
+    </script>
+  </body>
+</html>

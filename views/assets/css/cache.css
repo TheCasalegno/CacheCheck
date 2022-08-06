@@ -1,0 +1,112 @@
+body {
+    background-image: url("http://localhost:3000/assets/images/background.png");
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    padding-left: 10px;
+}
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    padding-left: 10px;
+}
+
+h4{
+    font-family: 'Oswald', sans-serif;
+    padding-left: 10px;
+}
+
+p{
+    font-family: 'Oswald', sans-serif;
+    padding-left: 10px;  
+}
+
+.menuDiv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: gainsboro;
+    height: 150px;
+    box-shadow: 0px 10px 8px #888888;
+}
+
+.logoUp{
+    width: 20%;
+}
+
+.noteMessage{
+    color: slategrey;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 17px;
+}
+
+.divMain{
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: gainsboro;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    margin-top: 160px;
+}
+
+.message{
+    color: white;
+}
+
+.title{
+    width: 70%;
+    height: 20px;
+}
+
+.gcode{
+    height: 20px;
+    width: 80px;
+}
+
+.solution{
+    width: 70%;
+    height: 20px;
+}
+
+.owner{
+    width: 108px;
+    height: 20px;
+}
+
+.pageTitle{
+    color: seagreen;
+}
+
+li{
+    font-family: 'Oswald', sans-serif;
+    padding-left: 10px;  
+}
+
+img{
+    max-width: 98%;
+}
+
+.incorrectText{
+    color: crimson;
+}
+
+.messageDiv{
+    border-radius: 20px;
+    border-width: 1,5px;
+    border-style: solid;
+    border-color: gainsboro;
+    background-color: whitesmoke;
+}
